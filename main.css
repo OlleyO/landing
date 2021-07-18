@@ -167,6 +167,7 @@ a.app-store::before {
   border-radius: 2px;
   width: 20%;
   height: 59px;
+  margin-bottom: 350px;
 }
 
 .intro .subscribe-btn:hover {
@@ -181,19 +182,66 @@ a.app-store::before {
   color: #ffffff;
   font-size: 5rem;
   font-weight: normal;
+  line-height: 5rem;
+}
+
+.intro p {
+  font-family: "SukhumvitSet";
+  font-weight: 300;
+  line-height: 2.6rem;
+  font-size: 2rem;
+  margin-bottom: 70px;
 }
 
 .coming-soon-section {
+  position: relative;
   background-color: #1a1a1a;
   text-align: center;
 }
 
 .coming-soon-section h1 {
-  font-family: Saudagar;
+  font-family: "Saudagar";
   color: #ffffff;
-  font-size: 19.6875rem;
+  font-size: 15rem;
+  line-height: 15rem;
   opacity: 0.06;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.coming-soon-section div {
+  display: inline-block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.coming-soon-section div h2 {
+  font-family: "Saudagar";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3.125rem;
+  letter-spacing: 3.5px;
+}
+
+.coming-soon-section div p {
+  white-space: pre;
+  margin-bottom: 240px;
+  opacity: 0.8;
+}
+
+.coming-soon-section #image3 {
+  width: 80%;
+}
+
+.two-items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 850px) {
@@ -206,8 +254,18 @@ a.app-store::before {
   .title {
     margin-left: 5%;
   }
+  .two-items-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .intro h1 {
     font-size: 17.1875rem;
+    line-height: 17.1875rem;
   }
   .store-links {
     margin-left: auto;

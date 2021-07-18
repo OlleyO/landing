@@ -176,6 +176,7 @@ a {
     border-radius: 2px;
     width: 20%;
     height: 59px;
+    margin-bottom: 350px;
 
     &:hover {
       background-color: #c09485;
@@ -189,20 +190,60 @@ a {
     color: #ffffff;
     font-size: 5rem;
     font-weight: normal;
+    line-height: 5rem;
+  }
+
+  p {
+    font-family: "SukhumvitSet";
+    font-weight: 300;
+    line-height: 2.6rem;
+    font-size: 2rem;
+    margin-bottom: 70px;
   }
 }
 
 .coming-soon-section {
+  position: relative;
   background-color: #1a1a1a;
   text-align: center;
 
   h1 {
-    font-family: Saudagar;
+    font-family: "Saudagar";
     color: #ffffff;
-    font-size: 19.6875rem;
+    font-size: 15rem;
+    line-height: 15rem;
     opacity: 0.06;
     text-transform: uppercase;
+    font-weight: 400;
   }
+
+  div {
+    display: inline-block;
+    width: min-content;
+
+    h2 {
+      font-family: "Saudagar";
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 3.125rem;
+      letter-spacing: 3.5px;
+    }
+
+    p {
+      white-space: pre;
+      margin-bottom: 240px;
+      opacity: 0.8;
+    }
+  }
+
+  #image3 {
+    width: 80%;
+  }
+}
+
+.two-items-container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and(min-width: 850px) {
@@ -214,9 +255,15 @@ a {
     margin-left: 5%;
   }
 
+  .two-items-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .intro {
     h1 {
       font-size: 17.1875rem;
+      line-height: 17.1875rem;
     }
   }
 
