@@ -230,8 +230,15 @@ a.app-store::before {
   opacity: 0.8;
 }
 
-.coming-soon-section #image3 {
+.section3 {
+  position: relative;
+}
+
+.section3 #image3 {
   width: 80%;
+  position: absolute;
+  left: 10%;
+  top: -70px;
 }
 
 .two-items-container {
@@ -242,6 +249,20 @@ a.app-store::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.heading-number {
+  font-style: "Saudagar";
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+  font-style: normal;
+  font-weight: normal;
+  color: #dcac9b;
+  text-transform: uppercase;
+}
+
+#image4 {
+  width: 25%;
 }
 
 @media screen and (min-width: 850px) {
