@@ -4,6 +4,24 @@
           box-sizing: border-box;
 }
 
+.grey-op {
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.grey {
+  color: #1a1a1a;
+}
+
+.white {
+  color: #fff;
+}
+
+.white-op {
+  color: #fff;
+  opacity: 0.8;
+}
+
 @font-face {
   font-family: "Montserrat_Normal";
   src: url("./assets/fonts/Montserrat-Regular.eot");
@@ -230,8 +248,19 @@ a.app-store::before {
   opacity: 0.8;
 }
 
+h2 {
+  font-family: "Saudagar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  text-transform: uppercase;
+}
+
 .section3 {
   position: relative;
+  padding-top: 45%;
+  margin-bottom: 200px;
 }
 
 .section3 #image3 {
@@ -245,20 +274,40 @@ a.app-store::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .heading-number {
-  font-style: "Saudagar";
+  font-family: "Saudagar";
   font-size: 1.875rem;
   line-height: 2.8125rem;
   font-style: normal;
   font-weight: normal;
   color: #dcac9b;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.section4 {
+  background-color: #1a1a1a;
+}
+
+.section4 .two-items-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section5 {
+  padding-top: 100px;
 }
 
 #image4 {
@@ -280,9 +329,9 @@ a.app-store::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .intro h1 {
     font-size: 17.1875rem;
@@ -290,6 +339,12 @@ a.app-store::before {
   }
   .store-links {
     margin-left: auto;
+  }
+  .text-container {
+    width: 25%;
+  }
+  .wrap {
+    white-space: normal;
   }
 }
 /*# sourceMappingURL=main.css.map */

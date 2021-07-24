@@ -7,6 +7,24 @@
   box-sizing: border-box;
 }
 
+.grey-op {
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.grey {
+  color: #1a1a1a;
+}
+
+.white {
+  color: #fff;
+}
+
+.white-op {
+  color: #fff;
+  opacity: 0.8;
+}
+
 // There's no need using the whole set of chars for one word on whole page. I can simply load chars needed for one word!!!
 // font display
 // Fonts:
@@ -237,8 +255,19 @@ a {
   }
 }
 
+h2 {
+  font-family: "Saudagar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  text-transform: uppercase;
+}
+
 .section3 {
   position: relative;
+  padding-top: 45%;
+  margin-bottom: 200px;
 
   #image3 {
     width: 80%;
@@ -250,17 +279,34 @@ a {
 
 .two-items-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .heading-number {
-  font-style: "Saudagar";
+  font-family: "Saudagar";
   font-size: 1.875rem;
   line-height: 2.8125rem;
   font-style: normal;
   font-weight: normal;
   color: #dcac9b;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.section4 {
+  background-color: #1a1a1a;
+
+  // height: 950px;
+
+  .two-items-container {
+    align-items: center;
+  }
+}
+
+.section5 {
+  padding-top: 100px;
 }
 
 #image4 {
@@ -278,7 +324,7 @@ a {
 
   .two-items-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .intro {
@@ -290,5 +336,13 @@ a {
 
   .store-links {
     margin-left: auto;
+  }
+
+  .text-container {
+    width: 25%;
+  }
+
+  .wrap {
+    white-space: normal;
   }
 }
