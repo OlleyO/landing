@@ -314,6 +314,28 @@ h2 {
   width: 25%;
 }
 
+.circle {
+  display: inline-block;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  background-color: #dcac9b;
+  opacity: 0.6;
+}
+
+.three-items-container {
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#canvasCircle {
+  display: inline-block;
+  width: 30em;
+  height: 30em;
+}
+
 @media screen and (min-width: 850px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -345,6 +367,11 @@ h2 {
   }
   .wrap {
     white-space: normal;
+  }
+  .three-items-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
