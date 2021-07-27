@@ -23,7 +23,7 @@
       <section class="intro">
         <h1>salon</h1>
         <p>QUALITY LASHES FROM THE COMFORT OF YOUR HOME</p>
-        <button class="subscribe-btn">Subscribe</button>
+        <a href="#form" class="subscribe-btn">Subscribe</a>
       </section>
     </section>
     <section class="coming-soon-section">
@@ -110,7 +110,78 @@
       <!-- <canvas id="strangeCircle"></canvas> -->
     </section>
 
-    <section class="section6"></section>
+    <section class="section6">
+      <div class="form-and-image">
+        <img src="./assets/images/image5.svg" alt="" />
+        <div class="form-container">
+          <form id="form" action="">
+            <label for="form">Subscribe</label>
+            <div class="form-control">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Your name"
+              />
+              <label for="firstName">first name</label>
+            </div>
+
+            <div class="form-control">
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Your lastname"
+              />
+              <label for="lastName">last name</label>
+            </div>
+
+            <div class="form-control">
+              <select name="interestSelect" id="interestSelect">
+                <option value="none" selected disabled hidden>Choose</option>
+                <option value="client">Client</option>
+                <option value="lashes">Lashes</option>
+              </select>
+              <label for="interestSelect"
+                >interested in being a client or lashes</label
+              >
+            </div>
+
+            <div class="form-control">
+              <input type="text" name="city" id="city" placeholder="City" />
+              <label for="city">city</label>
+            </div>
+
+            <div class="form-control">
+              <input type="text" name="state" id="state" placeholder="State" />
+              <label for="state">state</label>
+            </div>
+
+            <div class="form-control">
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Phone number"
+              />
+              <label for="phoneNumber">Phone</label>
+            </div>
+
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+              />
+              <label for="email">email</label>
+            </div>
+
+            <input type="submit" name="subscribe" value="subscribe" />
+          </form>
+        </div>
+      </div>
+    </section>
     <footer></footer>
 
     <!-- <img id="circle" src="./assets/images/circle.svg" alt="" /> -->
