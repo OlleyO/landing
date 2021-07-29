@@ -516,9 +516,22 @@ select:focus + label {
   opacity: 1;
 }
 
+// @keyframes heading-number-move {
+//   from {
+//     margin-left: auto;
+//   }
+//   to {
+//     margin-left: 5%;
+//   }
+// }
+
 @media screen and(min-width: 850px) {
   .header {
     flex-direction: row;
+  }
+
+  .heading-number + h2 {
+    text-align: left;
   }
 
   .title {
@@ -547,5 +560,19 @@ select:focus + label {
 
   .wrap {
     white-space: normal;
+  }
+
+  .heading-number {
+    position: relative;
+    text-align: left;
+  }
+
+  [data-inviewport] {
+    transition: 2s;
+    left: -100%;
+  }
+
+  [data-inviewport].is-inViewport {
+    left: 0;
   }
 }

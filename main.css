@@ -533,6 +533,9 @@ select:focus + label {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .heading-number + h2 {
+    text-align: left;
+  }
   .title {
     margin-left: 5%;
   }
@@ -557,6 +560,18 @@ select:focus + label {
   }
   .wrap {
     white-space: normal;
+  }
+  .heading-number {
+    position: relative;
+    text-align: left;
+  }
+  [data-inviewport] {
+    -webkit-transition: 2s;
+    transition: 2s;
+    left: -100%;
+  }
+  [data-inviewport].is-inViewport {
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
