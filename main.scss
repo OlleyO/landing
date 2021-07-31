@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .grey-op {
   color: #1a1a1a;
   opacity: 0.8;
@@ -325,6 +329,28 @@ $phone-height: 660px;
   border-radius: 50%;
   background-color: #dcac9b;
   opacity: 0.6;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.that-circle {
+  position: relative;
+  width: $circle-diameter;
+  height: $circle-diameter;
+  border-radius: 50%;
+  animation-name: rotateCircle;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  // animation: name duration timing-function delay iteration-count direction
+  //   fill-mode;
 }
 
 .circle {
