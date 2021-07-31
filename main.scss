@@ -428,8 +428,12 @@ $phone-height: 660px;
   display: flex;
   background-color: #fff;
 
-  img {
+  .image-left-to-form {
     width: 50%;
+    background-image: url("./assets/images/image5.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -550,6 +554,12 @@ select:focus + label {
 //     margin-left: 5%;
 //   }
 // }
+
+@media screen and(max-width: 1220px) {
+  .phone-section {
+    display: none;
+  }
+}
 
 @media screen and(min-width: 850px) {
   .header {

@@ -456,8 +456,12 @@ h2 {
   background-color: #fff;
 }
 
-.form-and-image img {
+.form-and-image .image-left-to-form {
   width: 50%;
+  background-image: url("./assets/images/image5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .form-container {
@@ -565,6 +569,12 @@ select + label {
 input:focus + label,
 select:focus + label {
   opacity: 1;
+}
+
+@media screen and (max-width: 1220px) {
+  .phone-section {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 850px) {
